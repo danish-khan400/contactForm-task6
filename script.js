@@ -17,7 +17,7 @@ form.addEventListener('submit', function(e) {
     const message = document.getElementById('message').value.trim();
 
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    const phoneRegex = /^[0-9+\-\s]{7,15}$/;
+    const phoneRegex = /^\d{10}$/;
 
     if (firstName === '') {
         document.getElementById('firstNameError').textContent = 'First name is required.';

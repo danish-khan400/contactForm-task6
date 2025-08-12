@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" name="firstName">
+                        <div class="error" id="firstNameError"></div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="form-group">
+                        <label for="surname">Surname</label>
+                        <input type="text" id="surname" name="surname">
+                        <div class="error" id="surnameError"></div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="email">
+                        <div class="error" id="emailError"></div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="text" id="phone" name="phone">
+                        <div class="error" id="phoneError"></div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message"></textarea>
+                        <div class="error" id="messageError"></div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <input type="submit" value="Submit">
+                </div>
+            </div>
+            <div class="success" id="successMessage"></div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
